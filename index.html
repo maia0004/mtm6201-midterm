@@ -9,22 +9,17 @@
 </head>
 
 <body>
-  <div class="navigation">
+    <div class="header-box">
+      <div class="logo">
+        <img src="image/logo.png" alt="logo">
+      </div>
+    <h1>Orvature</h1>
     <nav>
-      <div class="grid-nav">
-        <div class="logo">
-          <img src="image/logo.png" alt="logo">
-        </div>
-        <div>
-          <h1>Orvature</h1>
-        </div>
-        <div>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="galery.html">Galery</a></li>
-            <li><a href="booking.html">Booking</a></li>
-          </ul>
-        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="galery.html">Galery</a></li>
+          <li><a href="booking.html">Booking</a></li>
+        </ul>
       </div>
     </nav>
   </div>
@@ -32,9 +27,15 @@
     <div class="search-nav">
       <input type="text" placeholder="Search">
     </div>
-    <div>
-     <img class="poster-image" src="image/poster.jpg" alt="poster">
-    </div>
+      <picture>
+        <source srcset=
+          "image/poster-400_x_517.jpg"
+          media="(max-width: 576px)">
+        <source srcset=
+          "image/poster-500_x_646.jpg"
+          media="(min-width: 576px)">
+          <img src="image/poster.jpg" alt="poster-ads">
+      </picture>
     <h2>Orvature Highlights</h2>
     <div class="box1">
       <a class="boxlink1" href="booking.html">Galery</a>
