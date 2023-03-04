@@ -9,53 +9,78 @@
 </head>
 
 <body>
+  <!--Here are the skip links-->
+  <div class="container">
+    <ul class="skip-links">
+      <li><a href="#nav">Skip to main nav</a></li>
+      <li><a href="#main">Skip to main content</a></li>
+      <li><a href="#join">Skip to join to our team</a></li>
+    </ul>
+    <!--end of skip links-->
+
+    <!--here starts the layout-->
     <div class="header-box">
       <div class="logo">
         <img src="image/logo.png" alt="logo">
-      </div>
-    <h1>Orvature</h1>
-    <nav>
+      </div>  
+      <h1>Orvature</h1>
+      <nav id="nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="galery.html">Galery</a></li>
           <li><a href="booking.html">Booking</a></li>
         </ul>
+      </nav>
+    </div>
+  </div>
+  <!--end of the layout-->
+
+  <!--main content containig poster ads, and animated 
+  links-->
+  <main id="main">
+    <div class="content-div">
+      <div class="search-nav">
+        <input type="text" placeholder="Search">
       </div>
-    </nav>
-  </div>
-  <div class="content-div">
-    <div class="search-nav">
-      <input type="text" placeholder="Search">
+        <!--I used source srcset to create resposive
+        images as asked on the assignment-->
+        <picture>
+          <source srcset=
+            "image/poster-400_x_517.jpg"
+            media="(max-width: 576px)">
+          <source srcset=
+            "image/poster-500_x_646.jpg"
+            media="(min-width: 576px)">
+            <img src="image/poster.jpg" alt="poster-ads">
+        </picture>
+      <h2>Orvature Highlights</h2>
+      <!--I used divs to create animated boxes-->
+      <div class="box1">
+        <a class="boxlink1" href="booking.html">Galery</a>
+        <h3>Take a look on our last works</h3>
+      </div>
+      <div class="box2">
+        <a class="boxlink2" href="booking.html">Booking</a>
+        <h3>Schedule with us</h3>
+      </div>
     </div>
-      <picture>
-        <source srcset=
-          "image/poster-400_x_517.jpg"
-          media="(max-width: 576px)">
-        <source srcset=
-          "image/poster-500_x_646.jpg"
-          media="(min-width: 576px)">
-          <img src="image/poster.jpg" alt="poster-ads">
-      </picture>
-    <h2>Orvature Highlights</h2>
-    <div class="box1">
-      <a class="boxlink1" href="booking.html">Galery</a>
-      <h3>Take a look on our last works</h3>
-    </div>
-    <div class="box2">
-      <a class="boxlink2" href="booking.html">Booking</a>
-      <h3>Schedule with us</h3>
-    </div>
-  </div>
+  </main>
+  <!--end of main content-->
+
+  <!--footer containing email label to join and &copy-->
   <div class="footer">
-    <h4>Join to our Team</h4>
-    <h3>Sign up to get the news</h3>
-    <form>
-      <div class="email">
-          <label class="form-control-label" for="firstName"></label>
-          <input type="text" class="form-control" id="email" name="email" placeholder="your email address" required/>
-      </div>
-    </form>
+    <!--I used span here only to add the skip link join-->
+    <span id="join"></span>
+      <h4>Join to our Team</h4>
+      <h3>Sign up to get the news</h3>
+      <form>
+        <div class="email">
+          <label for="email"></label>
+          <input type="text" class="form-control" id="email" name="email" placeholder="your email address" required>
+        </div>
+      </form>
     <footer>&copy; 2023 ORVATURE</footer>
   </div>
+  <!--end of footer-->
 </body>
 </html>
